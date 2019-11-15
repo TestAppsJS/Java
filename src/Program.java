@@ -1,23 +1,19 @@
 public class Program {
     public static void main(String[] args) {
-        Person creature = new Person();
-        creature.name = "Yeti";
-        creature.age = 2000;
-        creature.height = 220;
-        creature.age++;
-        creature.stamina= 10;
+        Person creature = new Person("Yeti", 2000, 220, 10);
 
-        System.out.println(creature.name + " have " + creature.age + " years!");
+
+        System.out.println(creature.getName() + " have " + creature.getAge() + " years!");
 
         creature.run();
         creature.run();
         creature.run();
-        System.out.println(creature.name + " have energy " + creature.stamina + "!");
+        System.out.println(creature.getName() + " have energy " + creature.getStamina() + "!");
         creature.sleep();
-        System.out.println(creature.name + " have energy " + creature.stamina + "!");
+        System.out.println(creature.getName() + " have energy " + creature.getStamina() + "!");
 
         if(creature.eatBanana()) {
-            System.out.println(creature.name + " eat Bananas!");
+            System.out.println(creature.getName() + " eat Bananas!");
         }
         Dog lessie = new Dog();
         lessie.size = 90;
