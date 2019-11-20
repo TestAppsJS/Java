@@ -1,9 +1,9 @@
 public class Person {
-    public String age;
-    private String name;
-    private int age;
-    private int height;
-    private int stamina;
+
+    protected String name;
+    protected int age;
+    protected int height;
+    protected int stamina;
 
     public String getName() {
         return name;
@@ -11,6 +11,11 @@ public class Person {
 
     public int getHeight() {
         return height;
+    }
+
+    public void grow(int size)
+    {
+        height += size;
     }
 
     public int getStamina() {
